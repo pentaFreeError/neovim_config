@@ -1,0 +1,8 @@
+
+
+vim.cmd("colorscheme kanagawa")
+
+
+
+
+
