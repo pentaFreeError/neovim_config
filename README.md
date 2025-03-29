@@ -70,7 +70,29 @@ A file tree for structured navigation.
 
 ---
 
-## 4) LSP Server Configuration
+## 4) Neovim Configuration Setup
+
+```bash
+# 1. Install Neovim
+sudo apt install neovim
+
+# 2. Move configuration files
+mkdir -p ~/.config/nvim
+git clone git@github.com:pentaFreeError/neovim_config.git
+mv neovim_config/* ~/.config/nvim
+
+# 3. Install Packer (plugin manager)
+git clone --depth 1 https://github.com/wbthomason/packer.nvim \
+  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+" 4. Open Neovim and run:
+:PackerSync
+```
+
+---
+
+
+## 5) LSP Server Configuration
 
 Currently, this configuration is set up with **Clang** for C/C++ development, but you can install additional LSP servers with the included LSP manager plugin.
 
